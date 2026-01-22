@@ -1,0 +1,20 @@
+<?php
+class Buku {
+    public $judul;
+    public $pengarang;
+
+    // Constructor untuk mengisi property
+    public function __construct($judul, $pengarang) {
+        $this->judul = $judul;
+        $this->pengarang = $pengarang;
+    }
+
+    public function infoBuku() {
+        return "Judul: " . $this->judul . ", Pengarang: " . $this->pengarang;
+    }
+}
+
+// Membuat objek
+$buku1 = new Buku("Laskar Pelangi", "Andrea Hirata");
+echo $buku1->infoBuku();
+?>
